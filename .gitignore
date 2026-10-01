@@ -1,0 +1,24 @@
+# 本机环境、依赖与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+
+# 凭据及本地数据库
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# 大型模型与运行生成内容由各子项目的 .gitignore 管理

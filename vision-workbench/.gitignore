@@ -1,0 +1,30 @@
+# Python 虚拟环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE / 系统临时文件
+.vscode/
+.idea/
+.DS_Store
+
+# Ultralytics 自动生成的本机运行设置
+configs/ultralytics/
+
+# 下载的模型权重（可根据 README 重新下载）
+models/*.pt
+
+# 用户输入数据与程序输出，只保留目录占位文件
+data/images/*
+!data/images/.gitkeep
+data/videos/*
+!data/videos/.gitkeep
+results/images/*
+!results/images/.gitkeep
+results/videos/*
+!results/videos/.gitkeep
+
+# Web 工作台生成的图片和 JSON，保留目录占位文件。
+outputs/images/*
+!outputs/images/.gitkeep

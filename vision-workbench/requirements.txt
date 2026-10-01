@@ -1,0 +1,15 @@
+# 阶段 1、2 的直接依赖，版本与已验证环境保持一致。
+# 额外软件源只用于取得 PyTorch 官方 CPU wheel（+cpu），不会安装 CUDA 运行库。
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.14.0+cpu
+torchvision==0.29.0+cpu
+ultralytics==8.4.157
+opencv-python==4.14.0.94
+numpy==2.2.6
+
+# 阶段 2：ByteTrack 的目标匹配依赖，不需要 CUDA 或额外模型。
+lap==0.5.12
+
+# 本地 Web 工作台第一阶段：图片检测界面。
+gradio==6.28.0

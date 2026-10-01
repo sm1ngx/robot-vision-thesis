@@ -1,0 +1,8 @@
+# 阶段 2：ByteTrack 参数，键名来自 Ultralytics 的 ByteTrack 接口。
+tracker_type: bytetrack
+track_high_thresh: 0.25  # 高置信度目标先参与匹配
+track_low_thresh: 0.10   # 较低置信度目标可帮助找回已有轨迹
+new_track_thresh: 0.25  # 创建新 ID 的最低置信度
+track_buffer: 30        # 暂时丢失的轨迹最多保留约 30 次更新
+match_thresh: 0.80      # 关联代价上限；越大匹配越宽松，并非 IoU 下限
+fuse_score: true        # 关联时同时考虑检测置信度
